@@ -1,0 +1,9 @@
+<div>
+	<mat-horizontal-stepper #stepper style="background: #DDD">
+		<mat-step label="Step 1" [editable]="editable">Step 1</mat-step>
+		<mat-step label="Step 2" [editable]="editable">Step 2</mat-step>
+		<mat-step label="Step 3">
+			<button mat-button (click)="editable = !editable">Disable steps</button>
+		</mat-step>
+	</mat-horizontal-stepper>
+</div>
